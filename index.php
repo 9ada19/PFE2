@@ -84,7 +84,7 @@
             <h2>Connexion Étudiant</h2>
             <div class="txt"><h4>Entrez votre émail academique et votre CIN</h4></div>
             
-            <form action="student_dashboard.html" method="post">
+            <form action="student_dashboard.php" method="post">
                 <input type="text" name="username" placeholder="Login">
                 <input type="password" name="password" placeholder="Mot de passe">
                 <button type="submit">Se connecter</button>
