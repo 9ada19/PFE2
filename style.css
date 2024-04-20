@@ -50,6 +50,7 @@ html, body {
 .prof, .etudiant {
     flex: 1; /* Distribute remaining space equally among the prof and etudiant divs */
     display: flex;
+    font-weight: 100;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -65,9 +66,13 @@ html, body {
 .image_header, .title_header{
     flex: 1; /* Distribute remaining space equally among the header, body, and footer */
     display: flex;
+    color: #6984B4;
+    font-weight: 100;
+    font-family:Secular One;
     flex-direction: column-reverse;
     justify-content: center;
     position: absolute;
+    
 
 }
 .image_header{
@@ -96,13 +101,13 @@ html, body {
 
 .divider {
     width: 90%;
-    height: 4px;
+    height: 2px;
     background-color: #CEC3C3;
     border-radius: 5px;
     margin: 10px auto; /* Center the divider horizontally */
 }
 .vdivider {
-    width: 4px;
+    width: 2px;
     height: 100%;
     background-color: #CEC3C3;
     border-radius: 5px;

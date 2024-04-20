@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduFSO</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet'>
 </head>
 <body>
     <div class="page">
@@ -71,8 +72,8 @@
             <div class="txt"><h4>Entrez votre émail academique et votre CIN</h4></div>
             
             <form action="Enseignant_dashboard.php" method="post">
-                <input type="text" name="username" placeholder="Login">
-                <input type="password" name="password" placeholder="Mot de passe">
+                <input type="text" name="email" placeholder="Login">
+                <input type="password" name="pass" placeholder="Mot de passe">
                 <button type="submit">Se connecter</button>
             </form>
         </div>
