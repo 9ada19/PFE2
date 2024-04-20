@@ -1,5 +1,5 @@
 <?php
-//commentaire ajouté
+//commentaire
 ?>
 <!DOCTYPE html>
 <html lang="fr">
