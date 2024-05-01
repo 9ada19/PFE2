@@ -64,9 +64,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   align-items: center;
   height: 60vh; /* Reduced height of the outer container */
   background-color: rgba(255, 255, 255, 0.5); /* Reduced opacity for the outer container */
-  background-image: url("../images/school-vector-seamless-pattern-blue-line-art-stationery-doodle-education-background-study_193606-578.avif");
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Stylish drop shadow for the outer container */
-  opacity: 10%;
   z-index: -1;
   background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background color */
 }
@@ -587,6 +585,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .burger:hover:after {
   top: 23px; }
 
+  .khdmi2{
+    align-items: center;
+    width: 200%;
+    height: 200%;
+    display: flex;
+    padding: 8%;
+    padding-left: 20%;
+    box-shadow: #000;
+    padding-right: 10%;
+  }
+
 /* Click */
 .burger.active span {
   opacity: 0; }
@@ -610,7 +619,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   outline: none; }
 
 .site-section {
-  padding: 5rem 0; }
+  padding: 6rem 0;
+  display: flex;
+  align-items: center; }
+
 
 .hero {
   padding: 70px 0; }
@@ -863,6 +875,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   @media (max-width: 736px) {
     .portfolio-area .filters ul li {
       padding: 6px 6px; } }
+
+   
 
 .portfolio-area .filters ul li:after {
   content: "";
