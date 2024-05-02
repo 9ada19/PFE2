@@ -1,16 +1,131 @@
-<!-- /*
-* Template Name: Develop
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!doctype html>
 <html lang="en">
 <head>
+  <style media="screen">
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background:#212020;
+  
+  }
+
+  .circle-wrap {
+    display:flex;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    margin-right: 90px;
+    border-radius: 50%;
+    
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #212020;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  .mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #607CB1;;
+  }
+  
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(153deg);
+    size: 20% ;
+  }
+  
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(153deg);
+    }
+  }
+  
+  /* 2nd bar */
+  
+  .mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #607CB1;;
+  }
+  
+  .mask.full-2,
+  .circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(117deg);
+  }
+  
+  @keyframes fill-2{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(117deg);
+    }
+  }
+  
+  /* 3rd progress bar */
+  .mask .fill-3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #607CB1;
+  }
+  
+  .mask.full-3,
+  .circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes fill-3{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+  
+  
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="images/Purple Blur Gradient Glass Effect Tweet Motivational Quote Instagram Post (4).png" sizes="64x64">
 
   <meta name="description" content="" />
   <meta name="keywords" content="bootstrap, bootstrap4" />
@@ -27,88 +142,56 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Develop Free HTML Template by Untree.co</title>
+  <title>Edufso</title>
 </head>
-<body>
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
 
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
+
+  <div class="container">
+
+
+    <nav class="site-nav">
+      <div class="logo">
+        <a href="index.html"><img class="khdmi" src="Untitled design.png" alt="image-alterna"></a>
       </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-    
-    <div class="container">
-
-
-      <nav class="site-nav">
-        <div class="logo">
-          <a href="index.html">Develop<span class="text-primary">.</span></a>
+      <div class="row align-items-center">
+        
+        
+        <div class="col-12 col-sm-12 col-lg-12 site-navigation text-center">
+          <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Messages</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
         </div>
-        <div class="row align-items-center">
-          
-          
-          <div class="col-12 col-sm-12 col-lg-12 site-navigation text-center">
-            <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
-              <li><a href="index.html">Home</a></li>
-              <li class="has-children">
-                <a href="#">Pages</a>
-                <ul class="dropdown">
-                  <li class="active"><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="single.html">Single</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-
-                  <li class="has-children">
-                    <a href="#">Menu Two</a>
-                    <ul class="dropdown">
-                      <li><a href="#">Sub Menu One</a></li>
-                      <li><a href="#">Sub Menu Two</a></li>
-                      <li><a href="#">Sub Menu Three</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Menu Three</a></li>
-                </ul>
-              </li>
-              <li><a href="elements.html">Elements</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-            </ul>
-
-            <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right menu-absolute">
-              <li class="cta-button"><a href="https://untree.co/" target="_blank">Free Templates</a></li>
-            </ul>
-
-            <a href="#" class="burger light ml-auto site-menu-toggle js-menu-toggle d-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
-              <span></span>
-            </a>
-
-          </div>
-
-        </div>  
-      </nav> <!-- END nav -->
-
-    </div> <!-- END container -->
+            
+            
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero.jpg);" data-aos="fade" id="home-section">
+      </div>  
+    </nav> <!-- END nav -->
+
+  </div> <!-- END container -->
+
+
+    <div class="site-blocks-cover overlay" data-aos="fade" id="home-section">
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
           
           <div class="col-md-12 mt-lg-5 text-center">
-            <h1 data-aos="fade-up" class="mb-4">Portfolio</h1>
+            <h1 data-aos="fade-up" class="mb-4">Student Dashboard</h1>
 
             <div class="row justify-content-around">
               <div class="col-lg-8">
-              <p class="mb-5"  data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Free Bootstrap Template created with <span class="icon-heart"></span> by the fine foks at <a href="https://untree.co/" target="_blank">Untree.co</a></p>
+              <p class="mb-5"  data-aos="fade-up" data-aos-delay="100">Here, you'll find the courses you're enrolled in, along with your latest progress updates and other important information regarding your academic journey.</p>
               </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-              <a href="#contact-section" class="btn btn-primary mr-2 mb-2">Get In Touch</a>
+              <a href="#courses-section" class="btn btn-primary mr-2 mb-2">New Courses</a>
+              <a href="#student-section" class="btn btn-primary mr-2 mb-2">My progress</a>
             </div>
           </div>
             
@@ -118,113 +201,58 @@
       
     </div> 
 
-    
-    <section class="site-section" id="portfolio-section">
-      <div class="container">
+  <div class="khdmi2" id="student-section">
 
-        <div class="filters" data-aos="fade-up" data-aos-delay="100">
-          <ul>
-            <li class="active" data-filter="*">All</li>
-            <li data-filter=".packaging">Packaging</li>
-            <li data-filter=".mockup">Mockup</li>
-            <li data-filter=".typography">Typography</li>
-            <li data-filter=".photography">Photography</li>
-          </ul>
-        </div>
-
-        <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
-          <div class="row grid">
-            <div class="isotope-card col-sm-4 all mockup">
-              <a href="images/img_v_4.jpg" data-fancybox="gal">
-                <img src="images/img_v_4.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>Card Vol. 3</h3>
-                  <div class="cat">Mockup</div>
-                </div>
-              </a>
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full-1">
+              <div class="fill-1"></div>
             </div>
-
-            <div class="isotope-card col-sm-4 all mockup">
-              <a href="images/img_h_1.jpg" data-fancybox="gal">
-                <img src="images/img_h_1.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>Card Vol. 3</h3>
-                  <div class="cat">Mockup</div>
-                </div>
-              </a>
+            <div class="mask half">
+              <div class="fill-1"></div>
             </div>
-            <div class="isotope-card col-sm-4 all mockup">
-              <a href="images/img_h_8.jpg" data-fancybox="gal">
-                <img src="images/img_h_8.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>Card Vol. 3</h3>
-                  <div class="cat">Mockup</div>
-                </div>
-              </a>
-            </div>
-            <div class="isotope-card col-sm-4 all typography">
-              <a href="images/img_h_2.jpg" data-fancybox="gal">
-                <img src="images/img_h_2.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>House Design</h3>
-                  <div class="cat">Typography</div>
-                </div>
-              </a>
-
-            </div>                            
-            <div class="isotope-card col-sm-4 all mockup">
-              <a href="images/img_h_3.jpg" data-fancybox="gal">
-                <img src="images/img_h_3.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>WoW</h3>
-                  <div class="cat">Mockup</div>
-                </div>
-              </a>
-            </div>
-            <div class="isotope-card col-sm-4 all packaging">
-              <a href="images/img_h_4.jpg" data-fancybox="gal">
-                <img src="images/img_h_4.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>Seat</h3>
-                  <div class="cat">Packaging</div>
-                </div>
-              </a>
-            </div>
-            <div class="isotope-card col-sm-4 all typography">
-              <a href="images/img_h_5.jpg" data-fancybox="gal">
-                <img src="images/img_h_5.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>Seat</h3>
-                  <div class="cat">Packaging</div>
-                </div>
-              </a>
-            </div>
-            <div class="isotope-card col-sm-4 all photography">
-              <a href="images/img_v_1.jpg" data-fancybox="gal">
-                <img src="images/img_v_1.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>House Design</h3>
-                  <div class="cat">Photography</div>
-                </div>
-              </a>
-            </div>
-            <div class="isotope-card col-sm-4 all photography">
-              <a href="images/img_v_2.jpg" data-fancybox="gal">
-                <img src="images/img_v_2.jpg" alt="Image" class="img-fluid">
-                <div class="contents">
-                  <h3>House Design</h3>
-                  <div class="cat">Photography</div>
-                </div>
-              </a>
-
-            </div>
+            <div class="inside-circle"> 85% </div>
           </div>
         </div>
-      </div>
-    </section>
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full-2">
+                <div class="fill-2"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill-2"></div>
+              </div>
+              <div class="inside-circle"> 65% </div>
+            </div>
+          </div>
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full-2">
+                <div class="fill-2"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill-2"></div>
+              </div>
+              <div class="inside-circle"> 10% </div>
+            </div>
+          </div>
+            <div class="circle-wrap">
+              <div class="circle">
+                <div class="mask full-3">
+                  <div class="fill-3"></div>
+                </div>
+                <div class="mask half">
+                  <div class="fill-3"></div>
+                </div>
+                <div class="inside-circle"> 75% </div>
+              </div>
+            </div>
+   
+   </div> 
+    
     <!-- .untrtee_co-section -->
 
-    <div class="site-section testimonial-section bg-light">
+    <div id="courses-section" class="site-section testimonial-section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -274,18 +302,8 @@
     </div>
 
 
-     <div class="py-5 bg-primary">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 mr-auto mb-4 mb-lg-0">
-            <h2 class="mb-3 mt-0 text-white">Let's get started. Work with us</h2>
-            <p class="mb-0 text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-          <div class="col-lg-4 text-lg-right">
-            <p class="mb-0"><a href="#" class="btn btn-outline-white text-white px-5 font-weight-bold btn-md-block">Get In Touch</a></p>
-          </div>
-        </div>
-      </div>
+     <div class="" style="background-color: #607CB1;">
+      
     </div>
 
 
@@ -309,46 +327,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="row">
-              <div class="col-12">
-                <div class="widget">
-                  <h3>Navigations</h3>
-                </div>
-              </div>
-              <div class="col-6 col-sm-6 col-md-4">
-                <div class="widget">
-                  <ul class="links list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Process</a></li>
-                    <li><a href="#">About Us</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-6 col-sm-6 col-md-4">
-                <div class="widget">
-                  <ul class="links list-unstyled">
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Privacy</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-6 col-sm-6 col-md-4">
-                <div class="widget">
-                  <ul class="links list-unstyled">
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Process</a></li>
-                    <li><a href="#">About Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
 
